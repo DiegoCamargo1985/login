@@ -39,6 +39,7 @@ exit();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -47,11 +48,14 @@ if(isset($mensaje)){?>
         <p><?php echo $mensaje ?></p>
         <?php }?>
 
-    <form action="" method="POST">
+    <form class="formOne"  action="" method="POST">
+        <div class="container">
     <label for="Identificacion">Identificacion</label>
-    <input type="text" name="Identificacion" require><br>Password
+    <input type="text" name="Identificacion" require><br>
+    <label for="Password">Password</label>
     <input type="password" name="Password" require><br>
-    <input type="submit">
+    <input id="inputSubmit" type="submit">
+    </div>
 
     </form>
 </body>
